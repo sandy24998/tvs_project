@@ -11,41 +11,59 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+    </style>
 </head>
+
 <body>
     <!--Navigation Bar-->
     <section id="nav-bar">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="../index.html">HOME</a>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="about.html">ABOUT US</a>
+                        <a class="nav-link" href="about.html">ABOUT US</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">OUR TEAM</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="services.html">SERVICES</a>
+                        <a class="nav-link" href="services.html">SERVICES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="price.html">PRICING</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="testimonials.html">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">CONTACT</a>
-                      </li>
-                  </ul>
-                </div>
-              </nav>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </section>
     <!--Testimonials-->
     <section id="testimonials">
@@ -54,15 +72,35 @@
             <p class="text-center">Our Happy Customers have something to say!!</p>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <div class="profile">
-                        <img class="user" alt="--">
-                        <blockquote> Your text goes here
-                        </blockquote>
-                        <h3>Your name <span> From </span></h3>
+                    <div class="card">
+                        <img src="../img/user1.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to business with you. It’s really great how easy your websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="../img/user2.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>“You made it so simple.It is so much faster and easier to work with than any old site. I just choose the site, make the deal and sell my car.Thanks, guys!”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="../img/user3.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>“Wow. I just sell my vehicle and it was SO SIMPLE. I am blown away. You guys are really made it simple. Thanks for being so awesome. High fives!”</p>
+                        </div>
                     </div>
                 </div>
                 <!--2 more testimonials divs goes here-->
             </div>
+
         </div>
     </section>
     <!--Footer-->

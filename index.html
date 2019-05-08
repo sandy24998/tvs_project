@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>True Value Seller</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+     <script type="text/javascript">
+            $('#myslider').carousel({
+                interval: 2000 ms
+            })
+        </script>
+
 </head>
 <body>
     <!--Navigation Bar-->
     <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img alt="logo"></a>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,9 +35,27 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <!--For including the link and css for it-->
-                  <a href="index.html">HOME</a>
+                  <a class="nav-link active" href="index.html">HOME</a>
                 </li>
                 <!--Your nav links go here-->
+                 <li class="nav-item">
+                    <a class="nav-link" href="pages/about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/team.html">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/price.html">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pages/testimonials.html">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pages/contact.html">CONTACT</a>
+                    </li>
               </ul>
             </div>
           </nav>
@@ -42,6 +71,39 @@
                 </ol>
                 <div class="carousel-inner">
                     <!-- Your Sliding Images comes here-->
+                     <div class="carousel-item active"
+                            style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./img/banner1.jpg')">
+                            <div class="carousel-caption" data-animaation:fade-up>
+                                <div class="caption-text">
+                                    <h5># Take a test drive</h5>
+                                    <p>Here we are with our services in your city</p>
+                                    <p>Serve happiness to customers </p>
+                                    <a href="pages/price.html"><button type="button" class="btn btn-danger">Book Now !</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./img/banner2.jpg')">
+                            <div class="carousel-caption">
+                                <div class="caption-text">
+                                    <h5># Find your dream car</h5>
+                                    <p>We provide services as per the customers requirements</p>
+                                    <p>Make Trust on our Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./img/banner3.jpg')">
+                            <div class="carousel-caption">
+                                <div class="caption-text">
+                                    <h5># verified and trusty Seller</h5>
+                                    <p>Making secure the customers choice</p>
+                                    <p>Make trust in customers </p>
+                                    <button type="button" class="btn btn-danger">Book Now !</button>
+                                </div>
+                            </div>
+                        </div>
+
                 </div>
                 <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -58,16 +120,36 @@
     <section>
         <section id="promo">
             <div class="container">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Here you can find cars of different brands with best prices.</p>
                 <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
             </div>
         </section>        
     </section>
     <!--Footer-->
     <footer>
-        <div class="container text-center">
-            <p><i class="far fa-copyright"></i>True Value Seller</p>
-        </div>        
+         <div class="footer-content">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <h1 class="text-center text-uppercase"><img src="./img/logo.png" style="height: 104px; font-size: 80px;"></h1>
+                        </div>
+                        <div class="col-xl-4">
+                            <h6 class="text-center text-uppercase"><strong>Useful Links</strong></h6><br>
+                           <a style="color:white; text-decoration:none; " href="./pages/contact.html"><p class="text-center">Contact Us</p></a>
+                           <a style="color:white;text-decoration:none;" href="./pages/about.html"><p class="text-center">About Us</p></a>
+                        </div>
+                        <div class="col-xl-4 d-block m-auto">
+                            <h6 class="text-center text-uppercase"><strong>Contact</strong> </h6><br>
+                            <p class="text-center">Ambala(Haryana), India</p>
+                            <p class="text-center">8168759713</p>
+                            <p class="text-center">TrueValueSeller@gmail.com</p>
+        
+                        </div>
+                    </div>
+        
+                    <div class="glyphicon-copyright-mark new"><br>
+                        <p class="glyphicon-copyright-mark text-center">&copy;True Value Seller</p>
+                    </div>
+                </div>      
     </footer>
 </body>
 </html>

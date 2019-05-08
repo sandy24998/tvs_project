@@ -11,18 +11,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <!--Navigation Bar-->
     <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../index.html">HOME</a>
                 </li>
                 <li class="nav-item">
@@ -40,7 +41,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                     <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
@@ -55,18 +56,36 @@
                 <div class="col-md-6">
                     <form class="contact-form">
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="Name" required="required">
+                        </div>
+                         <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone No." required="required">
+                        </div>
+                         <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required="required">
+                        </div>
+                         <div class="form-group">
+                            <textarea name="message" placeholder="Message" class="form-control" rows="5" cols="74"></textarea>
+                        </div>
+                         <div class="form-group">
+                            <button class="btn btn-primary">Send Message</button>
                         </div>
                         <!--Name, Phone. No, Email, Message-->
                         <!--Add Send Message Button here-->
-                    </form>
+                    </for   m>
                 </div>
                 <div class="col-md-6 contact-info">
-                    <div class="follow"><b>Address:</b> <i class="fas fa-map-marker-alt"></i>Lavelle Road, Bangalore, IN </div>
+                    <div class="follow"><i class="fas fa-map-marker-alt"></i>&nbsp;<b>Address : </b>  MMDU, Mullana</div>
                     <!--div for phone and email-->
-                    <div><label><b>Follow us:</b></label>
-                        <a href="#">Facebook icon</a>
-                        <a href="#">Twitter Icon here</a>
+                    <div class="follow"><i class="fas fa-envelope"></i>&nbsp;<label><b>Email : </b></label>
+                        <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">TrueValueSeller@gmail.com</a>
+                    </div>
+                     <div class="follow"><i class="fas fa-mobile-alt"></i>&nbsp;<label><b>Phone : </b></label>
+                        <a href="#">8168759713</a>
+                    </div>
+                    <div class="follow"><i class="fas fa-paper-plane"></i>&nbsp;<label><b>Follow us : </b></label>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -75,7 +94,7 @@
     <!--Footer-->
     <footer>
         <div class="container text-center">
-            <p><i class="far fa-copyright"></i>True Value Seller</p>
+            <p><i class="far fa-copyright"></i>Copyrighted By True Value Seller</p>
         </div>
     </footer>
 </body>
